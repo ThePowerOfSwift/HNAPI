@@ -1,7 +1,7 @@
 language: objective-c
 osx_image: xcode7.2
 cache: cocoapods
-podfile: HNAPI/Podfile
+podfile: Podfile
 before_install:
 - pod install
 script:
@@ -11,6 +11,6 @@ script:
   -workspace HNAPI.xcworkspace \
   -scheme HNAPI_Tests \
   -sdk iphonesimulator \
+  -destination 'platform=iOS Simulator,name=iPhone 6,OS=latest' \
   ONLY_ACTIVE_ARCH=NO \
   | xcpretty
-- pod lib lint
