@@ -12,7 +12,6 @@ import Moya
 import RxSwift
 import Alamofire
 import HNAPI
-import Moya_ObjectMapper
 
 class HNAPIProviderSpec: QuickSpec {
     override func spec() {
