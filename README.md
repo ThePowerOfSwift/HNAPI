@@ -7,16 +7,29 @@
 [![License](https://img.shields.io/cocoapods/l/HNAPI.svg?style=flat)](http://cocoapods.org/pods/HNAPI)
 [![Platform](https://img.shields.io/cocoapods/p/HNAPI.svg?style=flat)](http://cocoapods.org/pods/HNAPI)
 
+HackerNews API Provider built with Moya + ObjectMapper + RxSwift.
+
+## Usage
+
+``` swift
+_ = provider.request(.User("Lex")).mapObject(User).subscribeNext { user in
+    print(user.id, user.created)
+}
+```
+
 ## Tests
 
-To run the tests, clone the repo, and run `pod install` from the root directory first.
+To run the tests, clone the repo,
+and run `pod install` from the root directory first.
+Open the HNAPI.xcworkspace and select HNAPI scheme.
+Hit command+u to test.
 
 ## Dependencies
 
 1. [RxSwift](https://github.com/ReactiveX/RxSwift/)
 2. [Moya](https://github.com/Moya/Moya)
 3. [ObjectMapper](https://github.com/Hearst-DD/ObjectMapper)
-4. [Moya-ObjectMapper](https://github.com/ivanbruel/Moya-ObjectMapper)
+4. * [Moya-ObjectMapper](https://github.com/ivanbruel/Moya-ObjectMapper)
 
 ## CocoaPods
 
