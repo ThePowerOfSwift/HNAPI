@@ -14,8 +14,8 @@ import Moya
 let HNAPIProvider = MoyaProvider<HNAPI>()
 
 public enum HNAPI {
-    case Item(String)
-    case User(String)
+    case ItemById(String)
+    case UserById(String)
     case MaxItemId
     case TopStories
     case NewStories
@@ -30,9 +30,9 @@ extension HNAPI: TargetType {
     
     public var path: String {
         switch self {
-        case .Item(let id):
+        case .ItemById(let id):
             return "/item/\(id).json"
-        case .User(let id):
+        case .UserById(let id):
             return "/item/\(id).json"
         case .MaxItemId:
             return "/maxitem.json"

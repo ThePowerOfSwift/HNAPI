@@ -49,11 +49,11 @@
 		D76B93041C5B5596005C7688 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D76B92FE1C5B5596005C7688 /* Result.framework */; };
 		D76B93051C5B5596005C7688 /* RxMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D76B92FF1C5B5596005C7688 /* RxMoya.framework */; };
 		D76B93061C5B5596005C7688 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D76B93001C5B5596005C7688 /* RxSwift.framework */; };
-		D7E8B7181C5A6B870021BD49 /* HNAPIProviderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E8B7171C5A6B870021BD49 /* HNAPIProviderSpec.swift */; };
 		D7E8B72D1C5B9EB00021BD49 /* HNMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E8B72B1C5B9EA80021BD49 /* HNMappable.swift */; };
 		D7E8B72E1C5B9EB00021BD49 /* HNMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E8B72B1C5B9EA80021BD49 /* HNMappable.swift */; };
 		D7E8B72F1C5B9EB10021BD49 /* HNMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E8B72B1C5B9EA80021BD49 /* HNMappable.swift */; };
 		D7E8B7301C5B9EB10021BD49 /* HNMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E8B72B1C5B9EA80021BD49 /* HNMappable.swift */; };
+		D7E8B7321C5BA9310021BD49 /* HNAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E8B7311C5BA9310021BD49 /* HNAPITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -95,8 +95,8 @@
 		D76B92FE1C5B5596005C7688 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/tvOS/Result.framework; sourceTree = "<group>"; };
 		D76B92FF1C5B5596005C7688 /* RxMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxMoya.framework; path = Carthage/Build/tvOS/RxMoya.framework; sourceTree = "<group>"; };
 		D76B93001C5B5596005C7688 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/tvOS/RxSwift.framework; sourceTree = "<group>"; };
-		D7E8B7171C5A6B870021BD49 /* HNAPIProviderSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HNAPIProviderSpec.swift; sourceTree = "<group>"; };
 		D7E8B72B1C5B9EA80021BD49 /* HNMappable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HNMappable.swift; sourceTree = "<group>"; };
+		D7E8B7311C5BA9310021BD49 /* HNAPITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HNAPITests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -274,7 +274,7 @@
 		D7E8B7161C5A6B690021BD49 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				D7E8B7171C5A6B870021BD49 /* HNAPIProviderSpec.swift */,
+				D7E8B7311C5BA9310021BD49 /* HNAPITests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -560,7 +560,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7E8B7181C5A6B870021BD49 /* HNAPIProviderSpec.swift in Sources */,
+				D7E8B7321C5BA9310021BD49 /* HNAPITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
