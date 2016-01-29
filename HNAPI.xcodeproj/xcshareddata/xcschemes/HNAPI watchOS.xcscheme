@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D76B92B31C5B46CD005C7688"
-               BuildableName = "HNAPI watchOS.framework"
+               BuildableName = "HNAPI.framework"
                BlueprintName = "HNAPI watchOS"
                ReferencedContainer = "container:HNAPI.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D76B92B31C5B46CD005C7688"
-            BuildableName = "HNAPI watchOS.framework"
+            BuildableName = "HNAPI.framework"
             BlueprintName = "HNAPI watchOS"
             ReferencedContainer = "container:HNAPI.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D76B92B31C5B46CD005C7688"
-            BuildableName = "HNAPI watchOS.framework"
+            BuildableName = "HNAPI.framework"
             BlueprintName = "HNAPI watchOS"
             ReferencedContainer = "container:HNAPI.xcodeproj">
          </BuildableReference>

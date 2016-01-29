@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D76B92A11C5B46C6005C7688"
-               BuildableName = "HNAPI tvOS.framework"
+               BuildableName = "HNAPI.framework"
                BlueprintName = "HNAPI tvOS"
                ReferencedContainer = "container:HNAPI.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D76B92A11C5B46C6005C7688"
-            BuildableName = "HNAPI tvOS.framework"
+            BuildableName = "HNAPI.framework"
             BlueprintName = "HNAPI tvOS"
             ReferencedContainer = "container:HNAPI.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D76B92A11C5B46C6005C7688"
-            BuildableName = "HNAPI tvOS.framework"
+            BuildableName = "HNAPI.framework"
             BlueprintName = "HNAPI tvOS"
             ReferencedContainer = "container:HNAPI.xcodeproj">
          </BuildableReference>

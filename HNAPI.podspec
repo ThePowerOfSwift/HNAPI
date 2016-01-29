@@ -19,6 +19,5 @@ Pod::Spec.new do |s|
   s.frameworks = 'Foundation'
   s.dependency 'Moya', '~> 6.0'
   s.dependency 'Moya/RxSwift', '~> 6.0'
-  s.dependency 'ObjectMapper', '~> 1.1'
   s.dependency 'RxSwift', '~> 2.0'
 end

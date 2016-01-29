@@ -12,14 +12,12 @@
 		D76973A41C5B174100471EF5 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76973A01C5B174100471EF5 /* Item.swift */; };
 		D76973A51C5B174100471EF5 /* Update.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76973A11C5B174100471EF5 /* Update.swift */; };
 		D76973A61C5B174100471EF5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76973A21C5B174100471EF5 /* User.swift */; };
-		D76B92841C5B23FD005C7688 /* Response+ObjectMapper+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76B92831C5B23FD005C7688 /* Response+ObjectMapper+Rx.swift */; };
 		D76B92881C5B271F005C7688 /* HNAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = D76B92871C5B271F005C7688 /* HNAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D76B928B1C5B29FB005C7688 /* HNAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = D76B92871C5B271F005C7688 /* HNAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D76B928D1C5B29FB005C7688 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76973A21C5B174100471EF5 /* User.swift */; };
 		D76B928E1C5B29FB005C7688 /* Update.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76973A11C5B174100471EF5 /* Update.swift */; };
 		D76B928F1C5B29FB005C7688 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76973A01C5B174100471EF5 /* Item.swift */; };
 		D76B92901C5B29FB005C7688 /* HNAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D769739E1C5B174100471EF5 /* HNAPI.swift */; };
-		D76B92911C5B29FB005C7688 /* Response+ObjectMapper+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76B92831C5B23FD005C7688 /* Response+ObjectMapper+Rx.swift */; };
 		D76B929C1C5B4544005C7688 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D76B929B1C5B4544005C7688 /* Alamofire.framework */; };
 		D76B929E1C5B4550005C7688 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D76B929D1C5B4550005C7688 /* Result.framework */; };
 		D76B92A31C5B46C6005C7688 /* HNAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = D76B92871C5B271F005C7688 /* HNAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -27,26 +25,21 @@
 		D76B92A61C5B46C6005C7688 /* Update.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76973A11C5B174100471EF5 /* Update.swift */; };
 		D76B92A71C5B46C6005C7688 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76973A01C5B174100471EF5 /* Item.swift */; };
 		D76B92A81C5B46C6005C7688 /* HNAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D769739E1C5B174100471EF5 /* HNAPI.swift */; };
-		D76B92A91C5B46C6005C7688 /* Response+ObjectMapper+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76B92831C5B23FD005C7688 /* Response+ObjectMapper+Rx.swift */; };
 		D76B92B51C5B46CD005C7688 /* HNAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = D76B92871C5B271F005C7688 /* HNAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D76B92B71C5B46CD005C7688 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76973A21C5B174100471EF5 /* User.swift */; };
 		D76B92B81C5B46CD005C7688 /* Update.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76973A11C5B174100471EF5 /* Update.swift */; };
 		D76B92B91C5B46CD005C7688 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76973A01C5B174100471EF5 /* Item.swift */; };
 		D76B92BA1C5B46CD005C7688 /* HNAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D769739E1C5B174100471EF5 /* HNAPI.swift */; };
-		D76B92BB1C5B46CD005C7688 /* Response+ObjectMapper+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76B92831C5B23FD005C7688 /* Response+ObjectMapper+Rx.swift */; };
-		D76B92C61C5B4F91005C7688 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D76B92C51C5B4F91005C7688 /* ObjectMapper.framework */; };
 		D76B92C81C5B500E005C7688 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D76B92C71C5B500E005C7688 /* RxSwift.framework */; };
 		D76B92CA1C5B528E005C7688 /* RxMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D76B92C91C5B528E005C7688 /* RxMoya.framework */; };
 		D76B92CC1C5B529C005C7688 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D76B92CB1C5B529C005C7688 /* Moya.framework */; };
 		D76B92EF1C5B53DD005C7688 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D76B92CD1C5B52C7005C7688 /* Alamofire.framework */; };
 		D76B92F01C5B53DD005C7688 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D76B92CE1C5B52C7005C7688 /* Moya.framework */; };
-		D76B92F11C5B53DD005C7688 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D76B92CF1C5B52C7005C7688 /* ObjectMapper.framework */; };
 		D76B92F21C5B53DD005C7688 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D76B929F1C5B45EE005C7688 /* Result.framework */; };
 		D76B92F31C5B53DD005C7688 /* RxMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D76B92D01C5B52C7005C7688 /* RxMoya.framework */; };
 		D76B92F41C5B53DD005C7688 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D76B92D11C5B52C7005C7688 /* RxSwift.framework */; };
 		D76B92F51C5B549B005C7688 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D76B92E31C5B5303005C7688 /* Alamofire.framework */; };
 		D76B92F61C5B549B005C7688 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D76B92E41C5B5303005C7688 /* Moya.framework */; };
-		D76B92F71C5B549B005C7688 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D76B92E51C5B5303005C7688 /* ObjectMapper.framework */; };
 		D76B92F81C5B549B005C7688 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D76B92E61C5B5303005C7688 /* Result.framework */; };
 		D76B92F91C5B549B005C7688 /* RxMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D76B92E71C5B5303005C7688 /* RxMoya.framework */; };
 		D76B92FA1C5B549B005C7688 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D76B92E81C5B5303005C7688 /* RxSwift.framework */; };
@@ -57,6 +50,10 @@
 		D76B93051C5B5596005C7688 /* RxMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D76B92FF1C5B5596005C7688 /* RxMoya.framework */; };
 		D76B93061C5B5596005C7688 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D76B93001C5B5596005C7688 /* RxSwift.framework */; };
 		D7E8B7181C5A6B870021BD49 /* HNAPIProviderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E8B7171C5A6B870021BD49 /* HNAPIProviderSpec.swift */; };
+		D7E8B72D1C5B9EB00021BD49 /* HNMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E8B72B1C5B9EA80021BD49 /* HNMappable.swift */; };
+		D7E8B72E1C5B9EB00021BD49 /* HNMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E8B72B1C5B9EA80021BD49 /* HNMappable.swift */; };
+		D7E8B72F1C5B9EB10021BD49 /* HNMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E8B72B1C5B9EA80021BD49 /* HNMappable.swift */; };
+		D7E8B7301C5B9EB10021BD49 /* HNMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E8B72B1C5B9EA80021BD49 /* HNMappable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,7 +70,6 @@
 		D76973A01C5B174100471EF5 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		D76973A11C5B174100471EF5 /* Update.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Update.swift; sourceTree = "<group>"; };
 		D76973A21C5B174100471EF5 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		D76B92831C5B23FD005C7688 /* Response+ObjectMapper+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Response+ObjectMapper+Rx.swift"; sourceTree = "<group>"; };
 		D76B92871C5B271F005C7688 /* HNAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HNAPI.h; path = "Supporting Files/HNAPI.h"; sourceTree = SOURCE_ROOT; };
 		D76B92981C5B29FB005C7688 /* HNAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HNAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D76B929B1C5B4544005C7688 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
@@ -81,18 +77,15 @@
 		D76B929F1C5B45EE005C7688 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/Mac/Result.framework; sourceTree = "<group>"; };
 		D76B92B11C5B46C6005C7688 /* HNAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HNAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D76B92C31C5B46CD005C7688 /* HNAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HNAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D76B92C51C5B4F91005C7688 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
 		D76B92C71C5B500E005C7688 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		D76B92C91C5B528E005C7688 /* RxMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxMoya.framework; path = Carthage/Build/iOS/RxMoya.framework; sourceTree = "<group>"; };
 		D76B92CB1C5B529C005C7688 /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/iOS/Moya.framework; sourceTree = "<group>"; };
 		D76B92CD1C5B52C7005C7688 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/Mac/Alamofire.framework; sourceTree = "<group>"; };
 		D76B92CE1C5B52C7005C7688 /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/Mac/Moya.framework; sourceTree = "<group>"; };
-		D76B92CF1C5B52C7005C7688 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/Mac/ObjectMapper.framework; sourceTree = "<group>"; };
 		D76B92D01C5B52C7005C7688 /* RxMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxMoya.framework; path = Carthage/Build/Mac/RxMoya.framework; sourceTree = "<group>"; };
 		D76B92D11C5B52C7005C7688 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/Mac/RxSwift.framework; sourceTree = "<group>"; };
 		D76B92E31C5B5303005C7688 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/watchOS/Alamofire.framework; sourceTree = "<group>"; };
 		D76B92E41C5B5303005C7688 /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/watchOS/Moya.framework; sourceTree = "<group>"; };
-		D76B92E51C5B5303005C7688 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/watchOS/ObjectMapper.framework; sourceTree = "<group>"; };
 		D76B92E61C5B5303005C7688 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/watchOS/Result.framework; sourceTree = "<group>"; };
 		D76B92E71C5B5303005C7688 /* RxMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxMoya.framework; path = Carthage/Build/watchOS/RxMoya.framework; sourceTree = "<group>"; };
 		D76B92E81C5B5303005C7688 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/watchOS/RxSwift.framework; sourceTree = "<group>"; };
@@ -103,6 +96,7 @@
 		D76B92FF1C5B5596005C7688 /* RxMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxMoya.framework; path = Carthage/Build/tvOS/RxMoya.framework; sourceTree = "<group>"; };
 		D76B93001C5B5596005C7688 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/tvOS/RxSwift.framework; sourceTree = "<group>"; };
 		D7E8B7171C5A6B870021BD49 /* HNAPIProviderSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HNAPIProviderSpec.swift; sourceTree = "<group>"; };
+		D7E8B72B1C5B9EA80021BD49 /* HNMappable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HNMappable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,7 +117,6 @@
 				D76B929C1C5B4544005C7688 /* Alamofire.framework in Frameworks */,
 				D76B929E1C5B4550005C7688 /* Result.framework in Frameworks */,
 				D76B92CC1C5B529C005C7688 /* Moya.framework in Frameworks */,
-				D76B92C61C5B4F91005C7688 /* ObjectMapper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,7 +126,6 @@
 			files = (
 				D76B92EF1C5B53DD005C7688 /* Alamofire.framework in Frameworks */,
 				D76B92F01C5B53DD005C7688 /* Moya.framework in Frameworks */,
-				D76B92F11C5B53DD005C7688 /* ObjectMapper.framework in Frameworks */,
 				D76B92F21C5B53DD005C7688 /* Result.framework in Frameworks */,
 				D76B92F31C5B53DD005C7688 /* RxMoya.framework in Frameworks */,
 				D76B92F41C5B53DD005C7688 /* RxSwift.framework in Frameworks */,
@@ -159,7 +151,6 @@
 			files = (
 				D76B92F51C5B549B005C7688 /* Alamofire.framework in Frameworks */,
 				D76B92F61C5B549B005C7688 /* Moya.framework in Frameworks */,
-				D76B92F71C5B549B005C7688 /* ObjectMapper.framework in Frameworks */,
 				D76B92F81C5B549B005C7688 /* Result.framework in Frameworks */,
 				D76B92F91C5B549B005C7688 /* RxMoya.framework in Frameworks */,
 				D76B92FA1C5B549B005C7688 /* RxSwift.framework in Frameworks */,
@@ -242,7 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				D769739E1C5B174100471EF5 /* HNAPI.swift */,
-				D76B92831C5B23FD005C7688 /* Response+ObjectMapper+Rx.swift */,
+				D7E8B72B1C5B9EA80021BD49 /* HNMappable.swift */,
 				D769739F1C5B174100471EF5 /* Models */,
 			);
 			path = Sources;
@@ -267,9 +258,6 @@
 				D76B92E41C5B5303005C7688 /* Moya.framework */,
 				D76B92CE1C5B52C7005C7688 /* Moya.framework */,
 				D76B92CB1C5B529C005C7688 /* Moya.framework */,
-				D76B92E51C5B5303005C7688 /* ObjectMapper.framework */,
-				D76B92CF1C5B52C7005C7688 /* ObjectMapper.framework */,
-				D76B92C51C5B4F91005C7688 /* ObjectMapper.framework */,
 				D76B92E61C5B5303005C7688 /* Result.framework */,
 				D76B929D1C5B4550005C7688 /* Result.framework */,
 				D76B929F1C5B45EE005C7688 /* Result.framework */,
@@ -581,10 +569,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D76973A61C5B174100471EF5 /* User.swift in Sources */,
+				D7E8B72D1C5B9EB00021BD49 /* HNMappable.swift in Sources */,
 				D76973A51C5B174100471EF5 /* Update.swift in Sources */,
 				D76973A41C5B174100471EF5 /* Item.swift in Sources */,
 				D76973A31C5B174100471EF5 /* HNAPI.swift in Sources */,
-				D76B92841C5B23FD005C7688 /* Response+ObjectMapper+Rx.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,10 +581,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D76B928D1C5B29FB005C7688 /* User.swift in Sources */,
+				D7E8B72E1C5B9EB00021BD49 /* HNMappable.swift in Sources */,
 				D76B928E1C5B29FB005C7688 /* Update.swift in Sources */,
 				D76B928F1C5B29FB005C7688 /* Item.swift in Sources */,
 				D76B92901C5B29FB005C7688 /* HNAPI.swift in Sources */,
-				D76B92911C5B29FB005C7688 /* Response+ObjectMapper+Rx.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -605,10 +593,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D76B92A51C5B46C6005C7688 /* User.swift in Sources */,
+				D7E8B72F1C5B9EB10021BD49 /* HNMappable.swift in Sources */,
 				D76B92A61C5B46C6005C7688 /* Update.swift in Sources */,
 				D76B92A71C5B46C6005C7688 /* Item.swift in Sources */,
 				D76B92A81C5B46C6005C7688 /* HNAPI.swift in Sources */,
-				D76B92A91C5B46C6005C7688 /* Response+ObjectMapper+Rx.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -617,10 +605,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D76B92B71C5B46CD005C7688 /* User.swift in Sources */,
+				D7E8B7301C5B9EB10021BD49 /* HNMappable.swift in Sources */,
 				D76B92B81C5B46CD005C7688 /* Update.swift in Sources */,
 				D76B92B91C5B46CD005C7688 /* Item.swift in Sources */,
 				D76B92BA1C5B46CD005C7688 /* HNAPI.swift in Sources */,
-				D76B92BB1C5B46CD005C7688 /* Response+ObjectMapper+Rx.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

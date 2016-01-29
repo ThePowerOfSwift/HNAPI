@@ -7,78 +7,111 @@
 //
 
 import Foundation
-import ObjectMapper
 
-public enum ItemType: String, RawRepresentable {
-    case Job = "job"
-    case Story = "story"
-    case Comment = "comment"
-    case Poll = "poll"
-    case PollOption = "pollopt"
-}
+/**
+ *  Stories, comments, jobs, Ask HNs and even polls are just items.
+ *  They're identified by their ids, which are unique integers,
+ *  and live under https://hacker-news.firebaseio.com/v0/item/.
+ *
+ *  Example https://hacker-news.firebaseio.com/v0/item/8863.json?print=pretty
+ */
+public struct Item: HNMappable {
 
-public struct Item: Mappable {
-    
     /// The item's unique id.
-    public var id: Int?
-    
+    public let id: Int!
+
     /// `true` if the item is deleted.
-    public var deleted: Bool = false
-    
+    public let deleted: Bool!
+
+    public enum ItemType: String, RawRepresentable {
+        case Job = "job"
+        case Story = "story"
+        case Comment = "comment"
+        case Poll = "poll"
+        case PollOption = "pollopt"
+    }
+
     /// The type of item. One of "job", "story", "comment", "poll", or "pollopt".
-    public var type: ItemType?
-    
+    public let type: ItemType!
+
     /// The username of the item's author.
-    public var by: String?
-    
+    public let by: String!
+
     /// Creation date of the item, in Unix Time.
-    public var time: NSDate?
-    
+    public let time: NSDate?
+
     /// The comment, story or poll text. HTML.
-    public var text: String?
-    
+    public let text: String!
+
     /// `true` if the item is dead.
-    public var dead: Bool = false
-    
+    public let dead: Bool!
+
     /// The item's parent. For comments, either another comment or the relevant story. For pollopts, the relevant poll.
-    public var parent: Int?
-    
+    public let parent: Int?
+
     /// The ids of the item's comments, in ranked display order.
-    public var kids: [Int]?
-    
+    public let kids: [Int]?
+
     /// The URL of the story.
-    public var url: String?
-    
+    public let url: NSURL?
+
     /// The story's score, or the votes for a pollopt.
-    public var score: Int?
-    
+    public let score: Int?
+
     /// The title of the story, poll or job.
-    public var title: String?
-    
+    public let title: String?
+
     /// A list of related pollopts, in display order.
-    public var parts: [Int]?
-    
+    public let parts: [Int]?
+
     /// In the case of stories or polls, the total comment count.
-    public var descendants: Int?
-    
-    public init?(_ map: Map) {
-        
+    public let descendants: Int?
+
+    public init?(_ dictionary: [String: AnyObject]) {
+        guard let id = dictionary["id"] as? Int else {
+            return nil
+        }
+
+        guard let typeString = dictionary["type"] as? String,
+            type = ItemType(rawValue: typeString) else {
+                return nil
+        }
+
+        self.id = id
+
+        self.deleted = dictionary["deleted"] as? Bool ?? false
+
+        self.type = type
+
+        self.by = dictionary["by"] as? String
+
+        if let time = dictionary["time"] as? Double {
+            self.time = NSDate(timeIntervalSince1970: time)
+        } else {
+            self.time = nil
+        }
+
+        self.text = dictionary["text"] as? String
+
+        self.dead = dictionary["dead"] as? Bool ?? false
+
+        self.parent = dictionary["parent"] as? Int
+
+        self.kids = dictionary["kids"] as? [Int]
+
+        if let url = dictionary["url"] as? String {
+            self.url = NSURL(string: url)
+        } else {
+            self.url = nil
+        }
+
+        self.score = dictionary["score"] as? Int
+
+        self.title = dictionary["title"] as? String
+
+        self.parts = dictionary["parts"] as? [Int]
+
+        self.descendants = dictionary["sdescendants"] as? Int
     }
     
-    mutating public func mapping(map: Map) {
-        id <- map["id"]
-        deleted <- map["deleted"]
-        type <- map["type"]
-        by <- map["by"]
-        time <- (map["time"], DateTransform())
-        text <- map["text"]
-        dead <- map["dead"]
-        parent <- map["parent"]
-        kids <- map["kids"]
-        url <- map["url"]
-        score <- map["score"]
-        title <- map["title"]
-        parts <- map["parts"]
-        descendants <- map["descendants"]
-    }
 }

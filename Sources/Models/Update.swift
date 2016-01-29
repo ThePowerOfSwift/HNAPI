@@ -7,19 +7,29 @@
 //
 
 import Foundation
-import ObjectMapper
 
-public struct Update: Mappable {
-    
-    public var items: [Int]?
-    public var profiles: [String]?
-    
-    public init?(_ map: Map) {
-        
+/**
+ *  The item and profile changes are at https://hacker-news.firebaseio.com/v0/updates.
+ *
+ *  Example: https://hacker-news.firebaseio.com/v0/updates.json?print=pretty
+ */
+public struct Update: HNMappable {
+
+    public let items: [Int]
+    public let profiles: [String]
+
+    public init?(_ dictionary: [String: AnyObject]) {
+        guard let items = dictionary["items"] as? [Int] else {
+            return nil
+        }
+
+        guard let profiles = dictionary["profiles"] as? [String] else {
+            return nil
+        }
+
+        self.items = items
+
+        self.profiles = profiles
     }
-    
-    mutating public func mapping(map: Map) {
-        items <- map["items"]
-        profiles <- map["profiles"]
-    }
+
 }
