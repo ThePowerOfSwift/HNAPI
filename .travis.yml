@@ -3,12 +3,12 @@ osx_image: xcode7.2
 cache: cocoapods
 podfile: HNAPI/Podfile
 before_install:
-- pod install --project-directory=HNAPI
+- pod install
 script:
 - |
   set -o pipefail && \
   xcodebuild test \
-  -workspace HNAPI/HNAPI.xcworkspace \
+  -workspace HNAPI.xcworkspace \
   -scheme HNAPI_Tests \
   -sdk iphonesimulator \
   ONLY_ACTIVE_ARCH=NO \

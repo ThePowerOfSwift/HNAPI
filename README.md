@@ -12,6 +12,7 @@ HackerNews API Provider built with Moya + ObjectMapper + RxSwift.
 ## Usage
 
 ``` swift
+let provider = RxMoyaProvider<HNAPI>()
 _ = provider.request(.User("Lex")).mapObject(User).subscribeNext { user in
     print(user.id, user.created)
 }
