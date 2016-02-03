@@ -15,7 +15,7 @@ import Foundation
  *
  *  Example https://hacker-news.firebaseio.com/v0/item/8863.json?print=pretty
  */
-public struct Item: HNMappable {
+public struct Item: DictionaryMappable {
 
     /// The item's unique id.
     public let id: Int!

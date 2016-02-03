@@ -57,9 +57,9 @@ extension HNAPI: TargetType {
     
     public var sampleData: NSData {
         switch self {
-        case .Item(_):
+        case .ItemById(_):
             return "{\"by\":\"dhouston\",\"descendants\": 71,\"id\": 8863,\"kids\":[8952,9224,8917],\"score\": 111,\"time\": 1175714200,\"title\":\"My YC app: Dropbox - Throw away your USB drive\",\"type\":\"story\",\"url\":\"http://www.getdropbox.com/u/2/screencast.html\"}".dataUsingEncoding(NSUTF8StringEncoding)!
-        case .User(_):
+        case .UserById(_):
             return "{\"about\":\"This is a test\",\"created\":1173923446,\"delay\":0,\"id\":\"jl\",\"karma\":2937,\"submitted\":[8265435,8168423]}".dataUsingEncoding(NSUTF8StringEncoding)!
         case .MaxItemId:
             return "234423".dataUsingEncoding(NSUTF8StringEncoding)!

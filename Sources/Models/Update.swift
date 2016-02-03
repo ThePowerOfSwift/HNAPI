@@ -13,7 +13,7 @@ import Foundation
  *
  *  Example: https://hacker-news.firebaseio.com/v0/updates.json?print=pretty
  */
-public struct Update: HNMappable {
+public struct Update: DictionaryMappable {
 
     public let items: [Int]
     public let profiles: [String]

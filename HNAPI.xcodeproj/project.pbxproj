@@ -49,10 +49,11 @@
 		D76B93041C5B5596005C7688 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D76B92FE1C5B5596005C7688 /* Result.framework */; };
 		D76B93051C5B5596005C7688 /* RxMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D76B92FF1C5B5596005C7688 /* RxMoya.framework */; };
 		D76B93061C5B5596005C7688 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D76B93001C5B5596005C7688 /* RxSwift.framework */; };
-		D7E8B72D1C5B9EB00021BD49 /* HNMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E8B72B1C5B9EA80021BD49 /* HNMappable.swift */; };
-		D7E8B72E1C5B9EB00021BD49 /* HNMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E8B72B1C5B9EA80021BD49 /* HNMappable.swift */; };
-		D7E8B72F1C5B9EB10021BD49 /* HNMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E8B72B1C5B9EA80021BD49 /* HNMappable.swift */; };
-		D7E8B7301C5B9EB10021BD49 /* HNMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E8B72B1C5B9EA80021BD49 /* HNMappable.swift */; };
+		D7770BD01C61CB0B00A15C74 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7770BCF1C61CB0B00A15C74 /* Endpoint.swift */; };
+		D7E8B72D1C5B9EB00021BD49 /* DictionaryMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E8B72B1C5B9EA80021BD49 /* DictionaryMappable.swift */; };
+		D7E8B72E1C5B9EB00021BD49 /* DictionaryMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E8B72B1C5B9EA80021BD49 /* DictionaryMappable.swift */; };
+		D7E8B72F1C5B9EB10021BD49 /* DictionaryMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E8B72B1C5B9EA80021BD49 /* DictionaryMappable.swift */; };
+		D7E8B7301C5B9EB10021BD49 /* DictionaryMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E8B72B1C5B9EA80021BD49 /* DictionaryMappable.swift */; };
 		D7E8B7321C5BA9310021BD49 /* HNAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E8B7311C5BA9310021BD49 /* HNAPITests.swift */; };
 /* End PBXBuildFile section */
 
@@ -95,7 +96,8 @@
 		D76B92FE1C5B5596005C7688 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/tvOS/Result.framework; sourceTree = "<group>"; };
 		D76B92FF1C5B5596005C7688 /* RxMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxMoya.framework; path = Carthage/Build/tvOS/RxMoya.framework; sourceTree = "<group>"; };
 		D76B93001C5B5596005C7688 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/tvOS/RxSwift.framework; sourceTree = "<group>"; };
-		D7E8B72B1C5B9EA80021BD49 /* HNMappable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HNMappable.swift; sourceTree = "<group>"; };
+		D7770BCF1C61CB0B00A15C74 /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		D7E8B72B1C5B9EA80021BD49 /* DictionaryMappable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryMappable.swift; sourceTree = "<group>"; };
 		D7E8B7311C5BA9310021BD49 /* HNAPITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HNAPITests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -233,7 +235,8 @@
 			isa = PBXGroup;
 			children = (
 				D769739E1C5B174100471EF5 /* HNAPI.swift */,
-				D7E8B72B1C5B9EA80021BD49 /* HNMappable.swift */,
+				D7E8B72B1C5B9EA80021BD49 /* DictionaryMappable.swift */,
+				D7770BCF1C61CB0B00A15C74 /* Endpoint.swift */,
 				D769739F1C5B174100471EF5 /* Models */,
 			);
 			path = Sources;
@@ -560,6 +563,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7770BD01C61CB0B00A15C74 /* Endpoint.swift in Sources */,
 				D7E8B7321C5BA9310021BD49 /* HNAPITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -569,7 +573,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D76973A61C5B174100471EF5 /* User.swift in Sources */,
-				D7E8B72D1C5B9EB00021BD49 /* HNMappable.swift in Sources */,
+				D7E8B72D1C5B9EB00021BD49 /* DictionaryMappable.swift in Sources */,
 				D76973A51C5B174100471EF5 /* Update.swift in Sources */,
 				D76973A41C5B174100471EF5 /* Item.swift in Sources */,
 				D76973A31C5B174100471EF5 /* HNAPI.swift in Sources */,
@@ -581,7 +585,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D76B928D1C5B29FB005C7688 /* User.swift in Sources */,
-				D7E8B72E1C5B9EB00021BD49 /* HNMappable.swift in Sources */,
+				D7E8B72E1C5B9EB00021BD49 /* DictionaryMappable.swift in Sources */,
 				D76B928E1C5B29FB005C7688 /* Update.swift in Sources */,
 				D76B928F1C5B29FB005C7688 /* Item.swift in Sources */,
 				D76B92901C5B29FB005C7688 /* HNAPI.swift in Sources */,
@@ -593,7 +597,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D76B92A51C5B46C6005C7688 /* User.swift in Sources */,
-				D7E8B72F1C5B9EB10021BD49 /* HNMappable.swift in Sources */,
+				D7E8B72F1C5B9EB10021BD49 /* DictionaryMappable.swift in Sources */,
 				D76B92A61C5B46C6005C7688 /* Update.swift in Sources */,
 				D76B92A71C5B46C6005C7688 /* Item.swift in Sources */,
 				D76B92A81C5B46C6005C7688 /* HNAPI.swift in Sources */,
@@ -605,7 +609,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D76B92B71C5B46CD005C7688 /* User.swift in Sources */,
-				D7E8B7301C5B9EB10021BD49 /* HNMappable.swift in Sources */,
+				D7E8B7301C5B9EB10021BD49 /* DictionaryMappable.swift in Sources */,
 				D76B92B81C5B46CD005C7688 /* Update.swift in Sources */,
 				D76B92B91C5B46CD005C7688 /* Item.swift in Sources */,
 				D76B92BA1C5B46CD005C7688 /* HNAPI.swift in Sources */,

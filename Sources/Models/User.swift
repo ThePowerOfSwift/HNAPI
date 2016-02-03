@@ -14,7 +14,7 @@ import Foundation
  *  Only users that have public activity (comments or story submissions) on the
  *  site are available through the API.
  */
-public struct User: HNMappable {
+public struct User: DictionaryMappable {
 
     /// The user's unique username. Case-sensitive. Required.
     public let id: String!
