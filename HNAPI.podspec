@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = "HNAPI"
-  s.version          = "0.1.0"
-  s.summary          = "A HackerNews API Client."
+  s.version          = "0.2.0"
+  s.summary          = "Tiny HackerNews API wrapper."
 
   s.homepage         = "https://github.com/lexrus/HNAPI"
   s.license          = 'MIT'
@@ -17,5 +17,4 @@ Pod::Spec.new do |s|
 
   s.source_files = 'Sources/**/*'
   s.frameworks = 'Foundation'
-  s.dependency 'Moya', '~> 6.0'
 end

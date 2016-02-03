@@ -1,5 +1,5 @@
 //
-//  HNAPI.swift
+//  HNEndpoint.swift
 //  HNAPI
 //
 //  Created by lexrus on 01/28/2016.
@@ -9,11 +9,8 @@
 // See https://github.com/HackerNews/API/blob/master/README.md
 
 import Foundation
-import Moya
 
-let HNAPIProvider = MoyaProvider<HNAPI>()
-
-public enum HNAPI {
+public enum HNEndpoint {
     case ItemById(String)
     case UserById(String)
     case MaxItemId
@@ -23,17 +20,17 @@ public enum HNAPI {
     case Updates
 }
 
-extension HNAPI: TargetType {
+extension HNEndpoint: Endpoint {
     public var baseURL: NSURL {
         return NSURL(string: "https://hacker-news.firebaseio.com/v0")!
     }
-    
+
     public var path: String {
         switch self {
         case .ItemById(let id):
             return "/item/\(id).json"
         case .UserById(let id):
-            return "/item/\(id).json"
+            return "/user/\(id).json"
         case .MaxItemId:
             return "/maxitem.json"
         case .TopStories:
@@ -46,15 +43,7 @@ extension HNAPI: TargetType {
             return "/updates.json"
         }
     }
-    
-    public var method: Moya.Method {
-        return .GET
-    }
-    
-    public var parameters: [String: AnyObject]? {
-        return nil
-    }
-    
+
     public var sampleData: NSData {
         switch self {
         case .ItemById(_):
@@ -71,11 +60,7 @@ extension HNAPI: TargetType {
             return "[1212515,1234123]".dataUsingEncoding(NSUTF8StringEncoding)!
         case .Updates:
             return "{\"items\":[12122,123413],\"profiles\":[\"asdf\", \"lex\"]}".dataUsingEncoding(NSUTF8StringEncoding)!
-        
+
         }
     }
-}
-
-public func url(route: TargetType) -> String {
-    return route.baseURL.URLByAppendingPathComponent(route.path).absoluteString
 }
